@@ -1,2 +1,4 @@
 # Multithreaded-TCP-Server-Handling-Multiple-Clients-Demo-Using-Python
  The provided Python code establishes a TCP server listening on a specified address and port, handling multiple client connections concurrently using multithreading.
+
+This Python code establishes a TCP server listening on the loopback address (127.0.0.1) and port 9999. Upon client connection, it spawns a new thread to handle each client. The handle_client function manages client communication by receiving messages, acknowledging them, and sending back responses. Once the connection is terminated, it closes the client socket. The server continuously accepts incoming connections and handles them concurrently using threads, enabling efficient communication with multiple clients simultaneously. In this scenario, three clients are present, and the server efficiently handles each client's communication needs concurrently, ensuring responsiveness and scalability.
